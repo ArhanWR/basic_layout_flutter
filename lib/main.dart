@@ -6,7 +6,7 @@ void main() {
   runApp(MaterialApp(
     home: Scaffold(
       appBar: AppBar(
-        title: Text('Kolom dengan BlueBox'),
+        title: Text('Basic Layout'),
       ),
       body: MyWidget(),
     ),
@@ -18,10 +18,11 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisSize: MainAxisSize.max,
-      mainAxisAlignment: MainAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         BlueBox(),
-        BlueBox(),
+        BiggerBlueBox(),
         BlueBox(),
       ],
     );
@@ -34,6 +35,19 @@ class BlueBox extends StatelessWidget {
     return Container(
       width: 50,
       height: 50,
+      decoration: BoxDecoration(
+        color: Colors.blue,
+        border: Border.all(),
+      ),
+    );
+  }
+}
+class BiggerBlueBox extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 50,
+      height: 100,
       decoration: BoxDecoration(
         color: Colors.blue,
         border: Border.all(),
