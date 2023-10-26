@@ -17,32 +17,23 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.baseline,
+      crossAxisAlignment: CrossAxisAlignment.center,
       textBaseline: TextBaseline.alphabetic,
       children: const [
-        Text(
-          'Hey!',
-          style: TextStyle(
-            fontSize: 30,
-            fontFamily: 'Futura',
-            color: Colors.blue,
-          ),
+        Icon(
+          Icons.widgets,
+          size: 50,
+          color: Colors.blue,
         ),
-        Text(
-          'Hey!',
-          style: TextStyle(
-            fontSize: 50,
-            fontFamily: 'Futura',
-            color: Colors.green,
-          ),
+        Icon(
+          Icons.widgets,
+          size: 50,
+          color: Colors.red,
         ),
-        Text(
-          'Hey!',
-          style: TextStyle(
-            fontSize: 40,
-            fontFamily: 'Futura',
-            color: Colors.red,
-          ),
+        Icon(
+          Icons.widgets,
+          size: 50,
+          color: Colors.amber,
         ),
       ],
       //mainAxisSize: MainAxisSize.max,
