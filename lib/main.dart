@@ -28,13 +28,7 @@ class MyWidget extends StatelessWidget {
               'Flutter McFlutter',
               style: Theme.of(context).textTheme.headline6,
             ),
-            Text(
-              'Experienced App Developer',
-              style: TextStyle(
-                fontSize: 16, // Set the font size as needed
-                fontWeight: FontWeight.normal, // Set the font weight as needed
-              ),
-            ),
+            const Text('Experienced App Developer'),
           ],
         ),
       ],
