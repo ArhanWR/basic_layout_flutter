@@ -17,13 +17,26 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisSize: MainAxisSize.max,
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      crossAxisAlignment: CrossAxisAlignment.center,
+      //mainAxisSize: MainAxisSize.max,
+      //mainAxisAlignment: MainAxisAlignment.spaceAround,
+      //crossAxisAlignment: CrossAxisAlignment.center,
+      //children: [
+      //  BlueBox(),
+      //  BiggerBlueBox(),
+      //  BlueBox(),
+      //],
       children: [
         BlueBox(),
-        BiggerBlueBox(),
-        BlueBox(),
+        Flexible(
+          fit: FlexFit.loose,
+          flex: 1,
+          child: BlueBox(),
+        ),
+        Flexible(
+          fit: FlexFit.loose,
+          flex: 1,
+          child: BlueBox(),
+        ),
       ],
     );
   }
