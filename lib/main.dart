@@ -17,25 +17,12 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      textBaseline: TextBaseline.alphabetic,
-      children: const [
-        Icon(
-          Icons.widgets,
-          size: 50,
-          color: Colors.blue,
-        ),
-        Icon(
-          Icons.widgets,
-          size: 50,
-          color: Colors.red,
-        ),
-        Icon(
-          Icons.widgets,
-          size: 50,
-          color: Colors.amber,
-        ),
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Image.network('https://raw.githubusercontent.com/flutter/website/main/examples/layout/sizing/images/pic1.jpg'),
       ],
+
+
       //mainAxisSize: MainAxisSize.max,
       //mainAxisAlignment: MainAxisAlignment.spaceAround,
       //crossAxisAlignment: CrossAxisAlignment.center,
