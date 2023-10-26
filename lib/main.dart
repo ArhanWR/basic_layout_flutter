@@ -22,7 +22,9 @@ class MyWidget extends StatelessWidget {
       //crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         BlueBox(),
-        Expanded(
+        SizedBox(
+          width: 100,
+          height: 100,
           child: BlueBox(),
         ),
         BlueBox(),
