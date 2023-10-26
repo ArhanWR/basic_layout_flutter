@@ -20,24 +20,26 @@ class MyWidget extends StatelessWidget {
       //mainAxisSize: MainAxisSize.max,
       //mainAxisAlignment: MainAxisAlignment.spaceAround,
       //crossAxisAlignment: CrossAxisAlignment.center,
-      //children: [
-      //  BlueBox(),
-      //  BiggerBlueBox(),
-      //  BlueBox(),
-      //],
       children: [
         BlueBox(),
-        Flexible(
-          fit: FlexFit.tight,
-          flex: 1,
+        Expanded(
           child: BlueBox(),
         ),
-        Flexible(
-          fit: FlexFit.tight,
-          flex: 1,
-          child: BlueBox(),
-        ),
+        BlueBox(),
       ],
+      //children: [
+      //  BlueBox(),
+      //  Flexible(
+      //    fit: FlexFit.tight,
+      //    flex: 1,
+      //    child: BlueBox(),
+      //  ),
+      //  Flexible(
+      //    fit: FlexFit.tight,
+      //    flex: 1,
+      //    child: BlueBox(),
+      //  ),
+      //],
     );
   }
 }
