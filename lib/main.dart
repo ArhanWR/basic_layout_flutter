@@ -18,6 +18,7 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisSize: MainAxisSize.max,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         BlueBox(),
         BlueBox(),
