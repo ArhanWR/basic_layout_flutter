@@ -31,10 +31,18 @@ class MyWidget extends StatelessWidget {
             const Text('Experienced App Developer'),
           ],
         ),
-        SizedBox(),
-        Row(), // First empty Row
-        SizedBox(),
-        Row(), // Second empty Row
+        const SizedBox(height: 8),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: const [
+            Text('123 Main Street'),
+            Text('415-555-0198'),
+          ],
+        ),
+        const SizedBox(height: 16),
+        Row(
+          children: const [],
+        ),
       ],
     );
   }
