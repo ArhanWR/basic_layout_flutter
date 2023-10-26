@@ -31,6 +31,10 @@ class MyWidget extends StatelessWidget {
             const Text('Experienced App Developer'),
           ],
         ),
+        SizedBox(),
+        Row(), // First empty Row
+        SizedBox(),
+        Row(), // Second empty Row
       ],
     );
   }
