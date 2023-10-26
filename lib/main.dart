@@ -14,20 +14,28 @@ void main() {
 class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.start,
+    return Row(
       children: [
-        Text(
-          'Flutter McFlutter',
-          style: Theme.of(context).textTheme.headline6,
+        Padding(
+          padding: const EdgeInsets.all(8),
+          child: Icon(Icons.account_circle, size: 50),
         ),
-        Text(
-          'Experienced App Developer',
-          style: TextStyle(
-            fontSize: 16, // Set the font size as needed
-            fontWeight: FontWeight.normal, // Set the font weight as needed
-          ),
+        Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Flutter McFlutter',
+              style: Theme.of(context).textTheme.headline6,
+            ),
+            Text(
+              'Experienced App Developer',
+              style: TextStyle(
+                fontSize: 16, // Set the font size as needed
+                fontWeight: FontWeight.normal, // Set the font weight as needed
+              ),
+            ),
+          ],
         ),
       ],
     );
