@@ -28,12 +28,12 @@ class MyWidget extends StatelessWidget {
       children: [
         BlueBox(),
         Flexible(
-          fit: FlexFit.loose,
+          fit: FlexFit.tight,
           flex: 1,
           child: BlueBox(),
         ),
         Flexible(
-          fit: FlexFit.loose,
+          fit: FlexFit.tight,
           flex: 1,
           child: BlueBox(),
         ),
